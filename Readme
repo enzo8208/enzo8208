@@ -13,7 +13,7 @@ GET /choferes --> Devuelve todos los choferes
 
 GET /choferes/:idChofer --> Devuelve 1 chofer particular
 
-GET /choferes/:idChofer/all --> Devuelve todos los viajes que hizo un chofer particular
+GET /choferes/:idChofer/all --> Devuelve todos los viajes que hizo un chofer particular + La facturacion
 
 POST /choferes --> Carga choferes al sistema
 
