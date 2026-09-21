@@ -1,10 +1,51 @@
-- 👋 Hi, I’m @enzo8208
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+Objetivo: Crear una web donde un transportista pueda cargar su flota de camiones y choferes, y estos puedan ser asignados a un distintos viajes.
+Entidades:
+          CHOFERES
+          VIAJES
+          CAMIONES
+          FACTURACION
 
-<!---
-enzo8208/enzo8208 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Servicios:
+//HOME
+GET / --> Devuelve la pagina HOME
+
+//CHOFERES
+GET /choferes --> Devuelve todos los choferes
+
+GET /choferes/:idChofer --> Devuelve 1 chofer particular
+
+GET /choferes/:idChofer/completo --> Devuelve todos los viajes que hizo un chofer particular + La facturacion
+
+POST /choferes --> Carga choferes al sistema
+
+DELETE /choferes/:idChofer --> Elimina un chofer
+
+PUT /choferes/:idChofer --> Actualiza un chofer particular
+
+
+//CAMIONES
+GET /camiones --> Devuelve todos los camiones
+
+GET /camiones/:idCamion --> Devuelve un camion particular
+  
+GET /camiones/:idCamion/viajes --> Devuelve todos los viajes que hizo un camion particular
+
+GET /camiones/:idCamion/kilometros --> Devuelve los kilometros que hizo un camion particular 
+
+POST /camiones --> Carga camiones al sistema
+
+PUT /camiones/:idCamion --> Actualiza un camion particular
+
+DELETE /camiones/:idCamion --> Elimina un camion particular
+
+
+//VIAJES
+GET /viajes --> Devuelve todos los viajes realizados
+
+GET /viajes/:idViaje --> Devuelve los datos de un viaje particular 
+
+POST /viajes --> Carga viajes al sistema
+
+DELETE /viajes/:idViaje --> Elimina un viaje particular
+
+PUT /viajes/:idViaje --> Actualiza los datos de un viaje particular 
